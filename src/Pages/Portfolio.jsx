@@ -3,9 +3,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import kntag from "../assets/kntag.jpeg";
 import MercuryMart from "../assets/MercuryMart.jpeg";
-// import v1 from "../assets/videos/v1.mp4";
-// import v2 from "../assets/videos/v2.mp4";
-// import v3 from "../assets/videos/v3.mp4";
+import v1 from "../assets/videos/1.mp4";
+import v2 from "../assets/videos/2.mp4";
+import v3 from "../assets/videos/4.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,7 +31,7 @@ function Portfolio() {
       <p className="z-50 text-[#FFC11F] uppercase py-8 text-3xl px-8">Our Portfolio</p>
 
       <div className="horizontal-container" style={{
-        width: `${150}%`,
+        width: `${400}%`,
         height: "100vh",
         overflowX: "hidden"
       }}>
@@ -58,7 +58,7 @@ function Portfolio() {
               />
             </div>
           </section>
-          {/* <section
+          <section
             className="panel w-screen h-screen flex items-center justify-center flex-shrink-0"
           >
             <div className="relative w-fit border-2 border-[#FFC11F] rounded-2xl p-2">
@@ -71,7 +71,35 @@ function Portfolio() {
                 alt=""
               />
             </div>
-          </section> */}
+          </section>
+          <section
+            className="panel w-screen h-screen flex items-center justify-center flex-shrink-0"
+          >
+            <div className="relative w-fit border-2 border-[#FFC11F] rounded-2xl p-2">
+              <video
+                className="2xl:h-[600px] w-[890px] xl:h-[500px] rounded-md"
+                autoPlay
+                loop
+                muted
+                src={v2}
+                alt=""
+              />
+            </div>
+          </section>
+          <section
+            className="panel w-screen h-screen flex items-center justify-center flex-shrink-0"
+          >
+            <div className="relative w-fit border-2 border-[#FFC11F] rounded-2xl p-2">
+              <video
+                className="2xl:h-[600px] w-[890px] xl:h-[500px] rounded-md"
+                autoPlay
+                loop
+                muted
+                src={v3}
+                alt=""
+              />
+            </div>
+          </section>
         </div>
       </div>
     </div>
