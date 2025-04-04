@@ -11,33 +11,37 @@ function About() {
     useEffect(() => {
         const originalText = "At our core, we’re artists and innovators. We join forces with visionaries to breathe life into ideas—transforming creative sparks into elegant, scalable software that turns dreams into reality.";
         const words = originalText.split(/(\s+)/);
-        
+    
         textRef.current.innerHTML = words.map(word => 
             `<span class="word">${word}</span>`
         ).join('');
-
-        // Create a paused tween with stagger
+    
+        // Force reflow to ensure DOM updates
+        textRef.current.offsetHeight;
+    
         const tween = gsap.to(".word", {
             color: "#FFC11F",
             stagger: 0.3,
             ease: "none",
-            paused: true // Start paused
+            paused: true
         });
-
-        // Set up ScrollTrigger to control tween progress
+    
         ScrollTrigger.create({
             trigger: containerRef.current,
             start: "top top",
             end: "+=300%",
             pin: true,
             onUpdate: (self) => {
-                tween.progress(self.progress); // Directly link scroll progress to tween
+                tween.progress(self.progress);
             },
         });
-
+    
+        // Refresh ScrollTrigger after setup
+        ScrollTrigger.refresh();
+    
         return () => ScrollTrigger.getAll().forEach(t => t.kill());
     }, []);
-
+    
     return (
         <div ref={containerRef} className="h-[100vh] p-8 relative" style={{ background: "linear-gradient(180deg, #101010 40.51%, #000 100%)" }}>
             <p className="z-50 text-[#FFC11F] uppercase mt-16 2xl:text-3xl xl:text-xl">About</p>
