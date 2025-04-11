@@ -35,7 +35,7 @@ function Portfolio() {
         height: "100vh",
         overflowX: "hidden"
       }}>
-        <div className="flex h-screen w-full flex-nowrap">
+        <div className="flex h-screen w-full gap-4 lg:gap-0 flex-nowrap">
           <section
             className="panel w-screen h-screen flex items-center justify-center flex-shrink-0"
           >

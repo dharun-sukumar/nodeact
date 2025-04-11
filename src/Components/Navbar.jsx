@@ -9,27 +9,13 @@ function Navbar() {
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-    console.log("Menu toggled", isMenuOpen);
+    setIsMenuOpen(prevState => !prevState);
   };
 
-  useEffect(() => {
-    // Click outside handler
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  // Existing logo animation code remains the same...
 
   return (
     <>
-      <nav className="fixed w-full z-50 backdrop-blur-2xl">
+      <nav className="fixed w-full z-50 backdrop-blur-3xl">
         <div className="sm:container w-screen md:w-auto md:max-w-[100%] px-4">
           <div className="flex justify-between items-center h-16">
             {/* Hamburger Menu Button */}
@@ -80,19 +66,19 @@ function Navbar() {
               }`}
           >
             <div className="flex flex-col items-center pt-8 space-y-8">
-              <a className="text-2xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
+              <a className="xl:text-2xl md:text-xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
                 Home
               </a>
-              <a className="text-2xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
+              <a className="xl:text-2xl md:text-xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
                 About
               </a>
-              <a className="text-2xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
+              <a className="xl:text-2xl md:text-xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
                 Services
               </a>
-              <a className="text-2xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
+              <a className="xl:text-2xl md:text-xl uppercase text-gray-300 hover:text-white" href="" onClick={() => setIsMenuOpen(false)}>
                 Portfolio
               </a>
-              <a className="text-2xl uppercase px-8 py-3 rounded-lg bg-yellow-300 text-black hover:bg-yellow-400" href="" onClick={() => setIsMenuOpen(false)}>
+              <a className="xl:text-2xl md:text-xl uppercase px-8 py-3 rounded-lg bg-yellow-300 text-black hover:bg-yellow-400" href="" onClick={() => setIsMenuOpen(false)}>
                 Contact
               </a>
             </div>
@@ -104,7 +90,7 @@ function Navbar() {
         src={logo}
         alt="Logo"
         ref={logoRef}
-        className="2xl:h-48 xl:h-36 z-50 h-0 absolute bottom-1/2 right-1/4"
+        className="2xl:h-48 xl:h-36 md:h-48 h-0 z-10 absolute bottom-1/2 right-1/4"
       />
     </>
   );

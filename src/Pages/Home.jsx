@@ -21,48 +21,33 @@ function Home() {
             <div className="absolute bottom-10 right-16 flex flex-col items-center">
                 <div>
                     <div className="flex items-center justify-end">
-                        <p className="2xl:text-8xl xl:text-6xl"><DecryptedText delay={10}
-
+                        <div className="2xl:text-8xl lg:text-6xl md:text-5xl"><DecryptedText delay={10}
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-
                             easing="easeOutCubic"
-
                             threshold={0.2}
-
-                            rootMargin="-50px" text="Building digital" /></p>
+                            rootMargin="-50px" text="Building digital" /></div>
                         <div className="relative">
-                            <img src={tv} alt="tv" className="ml-10" />
-                            <p className="absolute top-4 left-10  text-8xl w-[1em] h-[1em] flex items-center justify-center">*</p>
+                            <img src={tv} alt="tv" className="ml-10 h-16 lg:h-auto" />
+                            <p className="absolute lg:top-4 lg:left-10 top-3 left-14 lg:text-8xl md:text-6xl lg:w-[1em] lg:h-[1em] flex items-center justify-center">*</p>
                         </div>
                     </div>
-                    <p className="2xl:text-8xl xl:text-6xl flex justify-end mr-[8.5rem]"><DecryptedText delay={10}
-
+                    <div className="2xl:text-8xl lg:text-6xl md:text-5xl flex justify-end lg:mr-[8.5rem] mr-[6rem]"><DecryptedText delay={10}
                         animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-
                         animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-
                         easing="easeOutCubic"
-
                         threshold={0.2}
-
-                        rootMargin="-50px" text="solutions that will" /></p>
+                        rootMargin="-50px" text="solutions that will" /></div>
                     <div className="flex items-center justify-end mr-30">
-                        <p className="2xl:text-8xl xl:text-6xl"><DecryptedText delay={10}
-
+                        <div className="2xl:text-8xl lg:text-6xl md:text-5xl"><DecryptedText delay={10}
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-
                             easing="easeOutCubic"
-
                             threshold={0.2}
-
-                            rootMargin="-50px" text="drive your success" /></p>
+                            rootMargin="-50px" text="drive your success" /></div>
                         <div className="relative">
-                            <img src={switch1} alt="switch" className="ml-10" />
-                            <p className="absolute top-8 left-[84px]  text-6xl w-[1em] h-[1em] flex items-center justify-center">*</p>
+                            <img src={switch1} alt="switch" className="ml-10 h-16 lg:h-auto" />
+                            <p className="absolute lg:top-8 top-[20px] left-[76px] lg:left-[84px] lg:text-6xl text-5xl lg:w-[1em] lg:h-[1em] flex items-center justify-center">*</p>
                         </div>
                     </div>
                 </div>
