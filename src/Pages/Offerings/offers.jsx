@@ -42,25 +42,25 @@ function Offers() {
     }, []);
 
     return (
-        <div ref={containerRef} className="h-[100vh] px-8 relative bg-black">
+        <div ref={containerRef} className=" min-h-[70vh] md:h-[100vh] px-8 relative bg-black">
             <p className="z-50 text-[#FFC11F] uppercase 2xl:text-3xl xl:text-xl">What do we offer</p>
             <div className="2xl:text-8xl lg:text-6xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
                 <div className="flex flex-col gap-8">
-                    <div className="flex items-center gap-6 justify-center">
+                    <div className="flex items-center gap-2 md:gap-6 justify-center">
                         <p className="reveal-element">From websites</p> 
-                        <img src={website} alt="website" className="reveal-element" />
+                        <img src={website} alt="website" className="reveal-element h-10 md:h-auto" />
                         <p className="reveal-element">to Mobile</p>
                     </div>
-                    <div className="flex items-center gap-6 justify-center">
+                    <div className="flex items-center gap-2 md:gap-6 justify-center">
                         <p className="reveal-element">apps</p> 
-                        <img src={store} alt="store" className="reveal-element" />
+                        <img src={store} alt="store" className="reveal-element h-10 md:h-auto" />
                         <p className="reveal-element">, from AI</p> 
-                        <img src={sparkle} alt="spark" className="reveal-element" /> 
+                        <img src={sparkle} alt="spark" className="reveal-element h-6 md:h-auto" /> 
                         <p className="reveal-element">automation</p>
                     </div>
-                    <div className="flex items-center gap-6 justify-center">
+                    <div className="flex items-center gap-2 md:gap-6 justify-center">
                         <p className="reveal-element">to cloud solutions</p> 
-                        <img src={cloud} alt="store" className="reveal-element" />
+                        <img src={cloud} alt="store" className="reveal-element h-10 md:h-auto" />
                     </div>
                 </div>
             </div>

@@ -24,8 +24,8 @@ function Testimonial() {
   const testimonialItems = testimonials.flatMap((testimonial, index) => {
     const elements = [
       <div key={`t-${index}`} className="flex-shrink-0 flex flex-col items-end w-fit max-w-[40%] mx-4">
-        <p className="text-2xl">"{testimonial.quote}"</p>
-        <p className="text-2xl">– {testimonial.author}</p>
+        <p className=" w-full md:text-2xl">"{testimonial.quote}"</p>
+        <p className=" w-full md:text-2xl">– {testimonial.author}</p>
       </div>
     ];
     
@@ -41,8 +41,8 @@ function Testimonial() {
   const duplicatedItems = [...testimonialItems, ...testimonialItems];
 
   return (
-    <div className="lg:px-8 lg:pt-16 bg-black overflow-hidden">
-      <p className="z-50 text-[#FFC11F] uppercase text-center text-3xl">What Users say</p>
+    <div className="px-8 lg:pt-16 bg-black overflow-hidden">
+      <p className="z-50 text-[#FFC11F] uppercase mt-16 2xl:text-3xl xl:text-xl">What Users say</p>
       <div className="py-16 overflow-hidden">
         <div className="inline-flex animate-scroll">
           {duplicatedItems.map((item, index) => (

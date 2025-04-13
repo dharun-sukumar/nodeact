@@ -10,7 +10,7 @@ import Footer from "./Pages/Footer";
 
 function App() {
   return (
-    <div className=" overflow-x-hidden">
+    <div className=" max-w-[100vw] overflow-x-hidden">
       <Navbar />
       <Home />
       <About />

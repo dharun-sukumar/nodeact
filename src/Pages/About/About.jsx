@@ -47,7 +47,7 @@ function About() {
             <p className="z-50 text-[#FFC11F] uppercase mt-16 2xl:text-3xl xl:text-xl">About</p>
             <div 
                 ref={textRef}
-                className="2xl:text-7xl lg:text-5xl md:text-4xl w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+                className="2xl:text-7xl lg:text-5xl md:text-4xl text-2xl w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
             />
             <div className="flex absolute bottom-10 w-full items-center justify-end gap-2 right-10 ">
                 <div className="h-[2px] w-[50%] bg-white"></div>

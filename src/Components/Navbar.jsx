@@ -90,7 +90,7 @@ function Navbar() {
         src={logo}
         alt="Logo"
         ref={logoRef}
-        className="2xl:h-48 xl:h-36 md:h-48 h-0 z-10 absolute bottom-1/2 right-1/4"
+        className="2xl:h-48 xl:h-36 md:h-48 h-40 z-10 absolute bottom-1/2 right-1/4"
       />
     </>
   );

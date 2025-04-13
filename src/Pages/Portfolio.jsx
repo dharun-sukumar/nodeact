@@ -27,15 +27,14 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className="relative bg-black overflow-x-hidden">
-      <p className="z-50 text-[#FFC11F] uppercase py-8 text-3xl px-8">Our Portfolio</p>
+    <div className="relative bg-black overflow-x-hidden max-w-[100vw]">
+      <p className="z-50 px-8 text-[#FFC11F] uppercase mt-16 2xl:text-3xl xl:text-xl">Our Portfolio</p>
 
-      <div className="horizontal-container" style={{
-        width: `${400}%`,
-        height: "100vh",
+      <div className="horizontal-container h-[100vh]" style={{
+        width: `${500}%`,
         overflowX: "hidden"
       }}>
-        <div className="flex h-screen w-full gap-4 lg:gap-0 flex-nowrap">
+        <div className="flex h-screen w-full gap-8 md:gap-4 lg:gap-0 flex-nowrap">
           <section
             className="panel w-screen h-screen flex items-center justify-center flex-shrink-0"
           >
